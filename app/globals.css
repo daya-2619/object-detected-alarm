@@ -5,7 +5,7 @@
   --foreground: #171717;
 }
 
-@theme inline {
+:root {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -23,4 +23,18 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+@layer utilities{
+  .text-balance{
+    text-wrap:balance;
+  }
+  .gradient{
+    background: linear-gradient(to bottom, #fff, #ec4899, #60a5fa);
+  }
+  .gradient-title{
+    background: linear-gradient(to bottom, #fff, #ec4899, #60a5fa);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 }
